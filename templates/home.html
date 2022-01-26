@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+{% block content %}
+<!--<html>-->
+<!--    <head></head>-->
+<!--    <body>-->
+<!--            <div class="g-signin2" data-width="300" data-height="200" data-longtitle="true"></div>-->
+<!--    </body>-->
+<!--</html>-->
+
+<!--        <meta name="google-signin-client_id" content="1036027860865-hvb11o0o2is9co5ddmvu1mvrli7ejcif.apps.googleusercontent.com">-->
+<!--        <article class="media content-section">-->
+<!--            <div class="media-body">-->
+<!--                <div class="article-metadata">-->
+<!--                    <a class="mr-2" href="#"></a>-->
+<!--                    <small class="text-muted"></small>-->
+<!--                </div>-->
+<!--                <h2><a class="article-title" href="#"></a></h2>-->
+<!--                <p class="article-content"></p>-->
+<!--            </div>-->
+
+<!--            <div class="g-signin2" data-width="300" data-height="200" data-longtitle="true"></div>-->
+<!--            <div class="g-signin2" data-onsuccess="onSignIn"></div>-->
+<!--            <form action="upload.php" method="post" enctype="multipart/form-data"> Select image to upload:-->
+<!--                <input type="file" name="fileToUpload" id="fileToUpload">-->
+<!--                <input type="submit" value="Upload Image" name="submit">-->
+<!--            </form>-->
+<!--        </article>-->
+
+<!---google login-->
+<!--<html>-->
+<!--<head>-->
+<!--  <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">-->
+<!--</head>-->
+<!--<body>-->
+<!--  <div id="my-signin2"></div>-->
+<!--  <script>-->
+<!--    function onSuccess(googleUser) {-->
+<!--      console.log('Logged in as: ' + googleUser.getBasicProfile().getName());-->
+<!--    }-->
+<!--    function onFailure(error) {-->
+<!--      console.log(error);-->
+<!--    }-->
+<!--    function renderButton() {-->
+<!--      gapi.signin2.render('my-signin2', {-->
+<!--        'scope': 'profile email',-->
+<!--        'width': 240,-->
+<!--        'height': 50,-->
+<!--        'longtitle': true,-->
+<!--        'theme': 'dark',-->
+<!--        'onsuccess': onSuccess,-->
+<!--        'onfailure': onFailure-->
+<!--      });-->
+<!--    }-->
+<!--  </script>-->
+<!--&lt;!&ndash;  <img src="logo_musicImprovisation.png" style="height: 40px; width:100px">&ndash;&gt;-->
+<!--  <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>-->
+<!--</body>-->
+<!--</html>-->
+<form method="POST" action=>
+    Name <input type="text" name="name"/>
+    <br>
+    Email <input type="email" name="email"/>
+    <br>
+    <input type="submit">
+</form>
+
+{% endblock content%}
